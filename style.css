@@ -46,7 +46,8 @@
     padding: .5rem;
     border: .125rem solid #ccc;
     border-radius: calc(.2rem + .125rem);
-    background-color: #fff;
+    background-color: #6418cf;
+    color: #fff;
 }
 
 .drop-title {
@@ -57,8 +58,17 @@
 }
 
 .drop-contador {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
     width: 100%;
+}
+
+.drop-contador span {
+    color: indigo;
+    font-weight: bold;
+    font-size: 2rem;
 }
 
 .draggable {
