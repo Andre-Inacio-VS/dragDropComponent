@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Drag and Drop Component</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="container">
+        <button type="reset" id="btn-reset" onclick="resetDragDrop()">Reset</button>
+
+        <div id="drag-container">
+            <div id="peca1" class="draggable animate-initialize" draggable="true">
+                Peça 1
+            </div>
+            <div id="peca2" class="draggable animate-initialize" draggable="true">
+                Peça 2
+            </div>
+            <div id="peca3" class="draggable animate-initialize" draggable="true">
+                Peça 3
+            </div>
+            <div id="peca4" class="draggable animate-initialize" draggable="true">
+                Peça 4
+            </div>
+            <div id="peca5" class="draggable animate-initialize" draggable="true">
+                Peça 5
+            </div>
+            <div id="peca6" class="draggable animate-initialize" draggable="true">
+                Peça 6
+            </div>
+        </div>
+        <div id="drop-container">
+            <div class="drop">
+                <span class="drop-title">Vao 1</span>
+                <span class="drop-contador">Qtd de Peças: <span id="contador1">0</span></span>
+                <div id="dropzone1" class="dropzone">
+
+                </div>
+            </div>
+            <div class="drop">
+                <span class="drop-title">Vao 2</span>
+                <span class="drop-contador">Qtd de Peças: <span id="contador2">0</span></span>
+                <div id="dropzone2" class="dropzone">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

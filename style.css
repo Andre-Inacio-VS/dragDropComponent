@@ -1,0 +1,133 @@
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: space-around;
+    align-items: center;
+    height: 97vh;
+    background-color: #eee;
+}
+
+#btn-reset {
+    padding: .5rem 1rem;
+    border-radius: 1rem;
+    background: linear-gradient(to bottom, #6418cf, #51f);
+    color: #eee;
+    font-size: 1.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none;
+    transition: all 200ms ease-in-out;
+}
+
+#btn-reset:hover {
+    scale: 1.1;
+    color: #fff;
+}
+
+#drag-container {
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+}
+
+#drop-container {
+    display: flex;
+    gap: 1rem;
+}
+
+.drop {
+    display: flex;
+    flex-direction: column;
+    padding: .5rem;
+    border: .125rem solid #ccc;
+    border-radius: calc(.2rem + .125rem);
+    background-color: #fff;
+}
+
+.drop-title {
+    text-align: center;
+    width: 100%;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.drop-contador {
+    text-align: center;
+    width: 100%;
+}
+
+.draggable {
+    width: max-content;
+    height: max-content;
+    line-height: normal !important;
+    padding: .8rem 1.5rem;
+    background-color: #6418cf;
+    color: #f1f1f1;
+    font-weight: 500;
+    text-align: center;
+    line-height: 50px;
+    border-radius: .5rem;
+    cursor: move;
+}
+
+.animate-initialize {
+    animation: slideIn 400ms ease forwards;
+}
+
+.fadeIn {
+    animation: fadeIn 400ms ease-in-out forwards;
+}
+
+.removing {
+    animation: fadeOut 0.5s ease forwards;
+}
+
+.dropzone {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #eee;
+    border: 2px solid #ccc;
+    border-radius: .2rem;
+    text-align: center;
+    line-height: 50px;
+}
+
+@keyframes slideIn {
+from {
+    transform: translateY(-50px); /* Posição inicial fora da tela */
+    opacity: 0;
+}
+to {
+    transform: translateY(0); /* Posição final */
+    opacity: 1;
+}
+}
+
+@keyframes fadeIn {
+from {
+    opacity: 0; /* Totalmente transparente */
+}
+to {
+    opacity: 1; /* Totalmente visível */
+}
+}
+
+@keyframes fadeOut {
+from {
+    opacity: 1; /* Totalmente visível */
+}
+to {
+    opacity: 0; /* Totalmente transparente */
+}
+}
